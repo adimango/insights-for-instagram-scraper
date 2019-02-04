@@ -40,7 +40,7 @@ class Scrapy {
 
     async evaluate() {
         try {
-            this.items = await this.load(10)
+            this.items = await this.load(100)
         } catch (error) {
             this.spinner.fail(`There was a problem parsing the page`)
             process.exit()
